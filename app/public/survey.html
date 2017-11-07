@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+
+    <!-- <link rel="stylesheet" href="../assets/style.css"> -->
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS MATERIALIZED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+
+
+    <style>
+    .card-panel{
+    width: 70%;
+    }
+    nav {
+    margin-bottom: 20px;
+    }
+    .brand-logo {
+
+    margin-left: 20px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">FriendFinder</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/api/friends">
+                        <i class="material-icons left">search</i>API Friend List</a>
+                </li>
+                <li>
+                    <a href="https://github.com/jessicalin58">
+                        <i class="material-icons left">list</i>Github Repo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="card-panel grey lighten-5">
+                <span class="grey-text text-darken-2">Survey Questions</span>
+            
+            <hr>
+                <span class="grey-text text-darken-2" style="font-style:italic">About You: Tell us a little bit more about you so that this survey can be more accurate</span>
+      
+      
+
+                    <div class="input-field">
+                        <input id="input-name" type="text" class="validate">
+                        <label for="input-name">Full Name</label>
+                    </div>
+
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" placeholder="Select a picture of yourself" type="text">
+                                </div>
+                            </div>
+  
+            
+                <!-- Card end div -->
+                </div>
+                <!-- div end row -->
+                </div>
+
+        
+
+            <div class="row">
+            <!-- Questions -->
+            <div class="card-panel grey lighten-5">
+            <!-- <span class="grey-text text-darken-2">Question 01: Select your favorite bread</span> -->
+            
+            
+
+            <div class="input-field">
+                <select id="multipleSelect">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Butter Croissant</option>
+                    <option value="2">Garlic Bread</option>
+                    <option value="3">Baguette</option>
+                    <option value="4">Pita</option>
+                    <option value="5">Flatbread</option>
+
+
+                </select>
+                <label id="input-scores">Question 01: Select your favorite bread</label>
+            </div>
+
+            <div class="input-field" >
+                <select id="multipleSelect-2">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Circle</option>
+                    <option value="2">Square</option>
+                    <option value="3">Triangle</option>
+                    <option value="4">Rectangle</option>
+                    <option value="5">I prefer 3D shapes</option>
+
+                </select>
+                <label>Question 02: Select your favorite 2D shape</label>
+            </div>
+
+                  <div class="input-field">
+                <select id="multipleSelect-3">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Squirell</option>
+                    <option value="2">Cat</option>
+                    <option value="3">Old granny</option>
+                    <option value="4">Piece of gum</option>
+                    <option value="5">I'll fight for myself!</option>
+
+                </select>
+                <label>Question 03: Select your fighter</label>
+            </div>
+            <div class="input-field">
+                <select id="multipleSelect-4">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Nicolas Cage</option>
+                    <option value="2">Internet Explorer</option>
+                    <option value="3">The government</option>
+                    <option value="4">A piece of paper</option>
+                    <option value="5">No war, just love</option>
+            
+                </select>
+                <label>Question 04: Select your enemy</label>
+            </div>
+            <div class="input-field">
+                <select id="multipleSelect-5">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Benjamin Franklin</option>
+                    <option value="2">The Pope</option>
+                    <option value="3">Magic Man</option>
+                    <option value="4">Someone who claims to be a demigod</option>
+                    <option value="5">"I guess I'll die"</option>
+
+                </select>
+                <label>Question 05: Select your healer</label>
+            </div>
+
+            <div class="input-field">
+                <select id="multipleSelect-6">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Woods</option>
+                    <option value="2">Mountain</option>
+                    <option value="3">Algae Infected Pool</option>
+                    <option value="4">Abandoned Warehouse</option>
+                    <option value="5">no idea...</option>
+
+                </select>
+                <label>Question 06: Select your arena</label>
+            </div>
+
+            <div class="input-field">
+                <select id="multipleSelect-7">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Enemy</option>
+                    <option value="2">My Fighter</option>
+                    <option value="3">I flee</option>
+                    <option value="4">They flee</option>
+                    <option value="5">Everybody flees</option>
+
+                </select>
+                <label>Question 07: Select who makes the first move</label>
+            </div>
+
+            <div class="input-field">
+                <select id="multipleSelect-8">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Pointless</option>
+                    <option value="2">Wasted my time</option>
+                    <option value="3">Could have been better</option>
+                    <option value="4">You had a typo</option>
+                    <option value="5">N/A (never-amigo)</option>
+
+                </select>
+                <label>Question 08: Rank this survey</label>
+            </div>
+            
+
+            <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+
+
+            <!-- Second card end div -->
+            </div>
+            <!-- end row div -->
+            </div>
+        
+
+         
+        </div>
+    </form>
+</div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- <script src="js/index.js"></script> -->
+    
+    <script>
+        $(document).ready(function () {
+                $('select').material_select();
+
+            });
+            
+        $(".submit").on("click", function (event) {
+                event.preventDefault();
+
+                var newFriend = {
+                    name: $("#input-name").val().trim(),
+                    // photo: $("#input-photo").val().trim(),
+                    scores: [
+                    $("#multipleSelect").val(),
+                    $("#multipleSelect-2").val(),
+                    $("#multipleSelect-3").val(),
+                    $("#multipleSelect-4").val(),
+                    $("#multipleSelect-5").val(),
+                    $("#multipleSelect-6").val(),
+                    $("#multipleSelect-7").val(),
+                    $("#multipleSelect-8").val()
+                ]
+                };
+                      console.log(newFriend);
+
+                $.post("/api/friends", newFriend,
+                          function (data) {
+                               if (data) {
+
+                                  alert("Data inputted");
+                          
+                              }
+                               else {
+                                   alert("No fun for you I see...");
+                               }
+                                        $("#input-name").val().trim()
+                                        $("#multipleSelect").val(),
+                                        $("#multipleSelect-2").val(),
+                                        $("#multipleSelect-3").val(),
+                                        $("#multipleSelect-4").val(),
+                                        $("#multipleSelect-5").val(),
+                                        $("#multipleSelect-6").val(),
+                                        $("#multipleSelect-7").val(),
+                                        $("#multipleSelect-8").val()
+                                    });
+
+                
+                });
+
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</body>
+
+</html>
